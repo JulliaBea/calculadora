@@ -10,33 +10,34 @@
 </head>
 <body>
     <div class="container">
-        <div class="titulo">
+        <div class="title">
             <p>Calculadora<p>
         </div>
-        <div class="calculadora">
-            <div class="operacao">
-                <div class="valor_atual">2322</div>
+        <div class="calculator">
+            <div class="operations">
+                <div id="previous-operation"></div>
+                <div id="current-operation">0</div>
             </div>
-            <div class="button">
-                <button>CE</button>
-                <button>C</button>
-                <button>DEL</button>
-                <button>/</button>
-                <button class="numero">7</button>
-                <button class="numero">8</button>
-                <button class="numero">9</button>
-                <button>*</button>
-                <button class="numero">4</button>
-                <button class="numero">5</button>
-                <button class="numero">6</button>
-                <button>-</button>
-                <button class="numero">1</button>
-                <button class="numero">2</button>
-                <button class="numero">3</button>
-                <button>+</button>
-                <button class="numero">0</button>
-                <button class="numero">.</button>
-                <button class="igual">=</button>
+            <div class="btns">
+                <button class="clear" onclick="clearAll()">C</button>
+                <button class="clear" onclick="backspace()">DEL</button>
+                <button class="op" onclick="insert('%')">%</button>
+                <button class="op" onclick="insert('/')">/</button>
+                <button class="num" onclick="insert('7')">7</button>
+                <button class="num" onclick="insert('8')">8</button>
+                <button class="num" onclick="insert('9')">9</button>
+                <button class="op" onclick="insert('*')">*</button>
+                <button class="num" onclick="insert('4')">4</button>
+                <button class="num" onclick="insert('5')">5</button>
+                <button class="num" onclick="insert('6')">6</button>
+                <button class="op" onclick="insert('-')">-</button>
+                <button class="num" onclick="insert('1')">1</button>
+                <button class="num" onclick="insert('2')">2</button>
+                <button class="num" onclick="insert('3')">3</button>
+                <button class="op" onclick="insert('+')">+</button>
+                <button class="num" onclick="insert('0')">0</button>
+                <button class="num" onclick="insert('.')">.</button>
+                <button class="igual" onclick="confirm()">=</button>
             </div>
         </div>
     </div>

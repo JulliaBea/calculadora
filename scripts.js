@@ -7,7 +7,7 @@ let num1;
 let num2;
 let op;
 
-function insert(value){         //tenta criar uma função pra calc e nela vc apaga o currentoperation.innerText
+function insert(value){         
     // Checa se o valor atual ja tem um ponto
     
     if(value === '.' && currentOperation.innerText.includes(".")){
